@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | INOKRI-Desafio 001</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.linkedin.com/company/inokri-solutions/?trk=ppro_cprof&originalSubdomain=ao" target="_blank"><img src="Imagens/inokri.png" alt="Icone da INOKRI"></a>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#">Calculadora</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <input type="text" class="n1" placeholder="Primeiro valor">
+            <input type="text" class="n2" placeholder="Segundo valor">
+            <button onclick="somaValores()">Calcular</button>
+        </section>
+
+        <div class="operacao">
+            <p>Soma: </p>
+            <p class="soma"></p>
+        </div>
+        <div class="operacao">
+            <p>Multiplicação: </p>
+            <p class="multiplicacao"></p>
+        </div>
+        <div class="operacao">
+            <p>Divisão: </p>
+            <p class="divisao"></p>
+        </div>
+        <div class="operacao">
+            <p>Subtração: </p>
+            <p class="subtracao"></p>
+        </div>
+    </main>
+    <script type="text/javascript">
+        var s1 = document.getElementsByClassName("n1");
+        var s2 = document.getElementsByClassName("n2");
+        function somaValores(){
+            var s3 = Number(s1[0].value) + Number(s2[0].value);
+            var s4 = Number(s1[0].value) * Number(s2[0].value);
+            var s5 = Number(s1[0].value) / Number(s2[0].value);
+            var s6 = Number(s1[0].value) - Number(s2[0].value);
+            var soma = document.querySelector(".soma").innerHTML = s3;
+            var soma = document.querySelector(".multiplicacao").innerHTML = s4;
+            var soma = document.querySelector(".divisao").innerHTML = s5;
+            var soma = document.querySelector(".subtracao").innerHTML = s6;
+        }
+    </script>
+</body>
+</html>

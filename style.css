@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+body {
+    background-color: #666;
+    margin: 0px;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a  img{
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 3px;
+    outline: 10px;
+}
+
+nav a:hover {
+    border-radius: 8px;
+    background-color: rgb(97, 97, 243);
+}
+
+main {
+    margin: auto;
+    margin-top: 40px;
+    width: 350px;
+    padding: 20px;
+}
+
+section {
+    margin: auto;
+    margin-top: 40px;
+    width: 350px;
+}
+
+section input {
+    width: 100px;
+}
+
+section button {
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+
+.operacao {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    margin-right: 2px;
+}
+
+.operacao p {
+    margin: 10px 0px 10px 0px;
+}
+
+.operacao p:last-child{
+    margin-left: 4px;
+}
